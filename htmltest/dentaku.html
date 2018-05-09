@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<TITLE>TEST1</TITLE>
+<SCRIPT Lauguage="JavaScript">
+var num = 0;
+var num1 = 0;
+var num2 = 0;
+var num3 = 0;
+var enzansi;
+
+var awnser;
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<SCRIPT Language="JavaScript">
+
+function inputed(a){    //入力した数を数値に追加していくメソッド
+  //if(a == 0){
+  //  num = num * 10;
+  //}
+  if(num == 0){
+    num += a;
+  }else{
+    num = (num*10)+a;
+  }if(a == '.'){
+    num = (num/10)+a;
+  }
+  if(num2 !== 0){
+    alert("リセットされていません続行しますか？");
+  }
+}
+
+function enzan(kaku){
+    if(num1 ==0){
+      num1 = num;
+      num = 0;
+      enzansi = kaku;
+    }else{
+      if(enzansi == '+'){
+        num1 = num1 + num;
+        num = 0;
+        enzansi = kaku;
+      }else if(enzansi == '*'){
+        num1 = num1 * num;
+        num = 0;
+      }else if(enzansi == '/'){
+        num1 = num1 /num;
+        num = 0;
+      }else if(enzansi == '-'){
+        num1 = num1 - num;
+        num = 0;
+      }
+    }
+}
+function keisan(){
+  if(enzansi == '+'){
+  num2 = num + num1;
+  num = 0;
+  num1 =0;
+  alert(num2);
+  }else if(enzansi == '*'){
+    num2 = num * num1;
+    alert(num2);
+    num = 0;
+    num1 =0;
+  }else if(enzansi == '/'){
+    num2 = num1 / num;
+    alert(num2);
+    num = 0;
+    num1 =0;
+  }else if(enzansi == '-'){
+    num2 = num1 - num;
+    num = 0;
+    num1 =0;
+  }
+
+
+}
+function rriset(rr){
+  if(rr == true){
+  num =0;
+  num1 =0;
+  num2 =0;
+  enzansi = 0;
+}
+}
+
+
+</SCRIPT>
+
+<input type="button" value="1" onclick="inputed(1)"/>
+<input type="button" value="2" onclick="inputed(2)"/>
+<input type="button" value="3" onclick="inputed(3)"/>
+<br>
+<input type="button" value="4" onclick="inputed(4)"/>
+<input type="button" value="5" onclick="inputed(5)"/>
+<input type="button" value="6" onclick="inputed(6)"/>
+<br>
+<input type="button" value="7" onclick="inputed(7)"/>
+<input type="button" value="8" onclick="inputed(8)"/>
+<input type="button" value="9" onclick="inputed(9)"/>
+<br>
+<input type="button" value="0" onclick="inputed(0)"/>
+<input type="button" value="+" onclick="enzan('+')"/>
+<input type="button" value="*" onclick="enzan('*')"/>
+<br>
+<input type="button" value="/" onclick="enzan('/')"/>
+<input type="button" value="-" onclick="enzan('-')"/>
+<input type="button" value="." onclick="inputed('.')"/>
+
+<input type="button" value="計算する" onclick="keisan()"/>
+<input type="button" value="リセット" onclick="rriset(true)"/>
+
+</BODY>
+</HTML>

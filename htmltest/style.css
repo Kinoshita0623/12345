@@ -1,0 +1,63 @@
+body {
+    color :rgb(48, 43, 43);
+    background:#BDBDBD
+}
+         header {
+             margin:30px 100px 0px 100px;
+             padding:10px;
+             background-color:rgb(8, 8, 8);
+            }
+         h1{
+             color:white;
+            }
+         main{
+             margin:20px 100px 20px 100px;
+             padding:5px 0px 0px 20px;
+             background-color:white;
+            }
+         footer{
+             margin:30px 100px 100px 100px;
+             padding:10px;
+             background-color:black;
+            }
+         p{font-size:12pt}
+         .menue{
+            margin:20px 100px 100px 100px;
+            padding:10px;
+            float:right;
+            width:150;
+            background-color:rgb(224, 221, 224);
+            line-height:3;
+            
+        }
+        .blogsize{
+            
+        }
+            /*ここから他人のソース*/
+            .sideMenu , .sideMenu ul { margin:0; padding:0; }  
+            .sideMenu a { text-decoration:none; }  
+            .sideMenu li {  
+            list-style:none;  
+            font-size:20px;  
+            line-height:20px;  
+            }  
+            .sideMenu , .sideMenu ul { margin:0; padding:0; }  
+            .sideMenu a { text-decoration:none; }  
+            .sideMenu li {  
+            list-style:none;  
+            font-size:15px;  
+            line-height:20px;  
+            }  
+            .sideMenu li a {  
+            display:block;  
+            padding:0 5px;  
+            background:(224, 221, 224);  
+            color:black;  
+            line-height:50px;  
+            border-bottom:solid 1px rgb(73, 73, 73);  
+            }  
+            .sideMenu li a:hover { background:rgb(239, 248, 250); }  
+
+            
+
+         
